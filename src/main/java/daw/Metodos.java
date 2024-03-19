@@ -32,16 +32,20 @@ public class Metodos {
         }catch(IOException ex){
             System.out.println("Error accediendo a " + nombreFichero);
         }
+        lista.remove(0);
         return lista;
     }
     
     //Método para sumar
-    //Leer fichero
-    public static List<Integer> devolver(List<String> lista){
-       String[][] matrizString = new String[3][lista.size()-1];
-       List<Integer> listaFinal = new ArrayList();
-       
-       return listaFinal;
+    //Leer devolver matriz de una lista
+    public static int[][]devolver(List<String> lista){
+       int[][] matriz = new int[lista.size()-1][6];
+       lista.remove(0);
+       for(int i=0;i<lista.size()-1;i++){
+           String[] temporal = lista.get(i).split("\\s");
+           
+       }
+       return matriz;
     }
     
     // Escribe un String a un fichero, sobreescribiendo si existe
