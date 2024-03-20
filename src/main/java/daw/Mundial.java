@@ -34,6 +34,7 @@ public class Mundial {
         //Generamos un fichero llamado resultado.txt con la informacion
         Metodos.generarFicheroADevolver(listado);
         //Lo enseñamos para comprobarlo
+        System.out.println("Leemos el fichero..");
         Metodos.leer();
     }
 }

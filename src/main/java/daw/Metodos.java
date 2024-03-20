@@ -71,6 +71,10 @@ public class Metodos {
             for (int j = 1; j < matriz[i].length; j++) {
                 acumulador += matriz[i][j];
             }
+            //Si las sumatoria es mayor al número especificado, registra error
+            if(matriz[i][0]-acumulador<0){
+                listado[i]=-1;
+            }
             listado[i] = matriz[i][0] - acumulador;
             acumulador = 0;
         }
